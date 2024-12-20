@@ -11,3 +11,12 @@ public class DiagonalSum {
         // Ask for the size of the square matrix
         System.out.print("Enter the size of the square matrix: ");
         int size = scanner.nextInt();
+
+        // Initialize the matrix
+        int[][] matrix = new int[size][size];
+        System.out.println("Enter the elements of the matrix row by row:");
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                matrix[i][j] = scanner.nextInt();
+            }
+        }
