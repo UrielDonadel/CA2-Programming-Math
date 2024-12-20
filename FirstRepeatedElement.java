@@ -32,3 +32,16 @@ public class FirstRepeatedElement {
 
         scanner.close();
     }
+
+    // Method to find the first repeated element in an array
+    public static int findFirstRepeated(int[] array) {
+        HashSet<Integer> seen = new HashSet<>();
+        for (int num : array) {
+            if (seen.contains(num)) {
+                return num; // Return the first repeated element
+            }
+            seen.add(num);
+        }
+        return -1; // No repeated element found
+    }
+}
