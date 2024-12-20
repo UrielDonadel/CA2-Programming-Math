@@ -27,3 +27,27 @@ public class SpiralTraversal {
         System.out.print("Spiral Traversal: ");
         spiralTraversal(matrix, rows, columns);
         scanner.close();
+        }
+
+    public static void spiralTraversal(int[][] matrix, int rows, int columns) {
+        int top = 0, bottom = rows - 1, left = 0, right = columns - 1;
+
+        while (top <= bottom && left <= right) {
+            for (int i = left; i <= right; i++) System.out.print(matrix[top][i] + " ");
+            top++;
+
+            for (int i = top; i <= bottom; i++) System.out.print(matrix[i][right] + " ");
+            right--;
+
+            if (top <= bottom) {
+                for (int i = right; i >= left; i--) System.out.print(matrix[bottom][i] + " ");
+                bottom--;
+            }
+
+            if (left <= right) {
+                for (int i = bottom; i >= top; i--) System.out.print(matrix[i][left] + " ");
+                left++;
+            }
+        }
+    }
+}
