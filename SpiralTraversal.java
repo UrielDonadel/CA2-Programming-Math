@@ -22,3 +22,8 @@ public class SpiralTraversal {
                 matrix[i][j] = scanner.nextInt();
             }
         }
+
+         // Perform spiral traversal
+        System.out.print("Spiral Traversal: ");
+        spiralTraversal(matrix, rows, columns);
+        scanner.close();
