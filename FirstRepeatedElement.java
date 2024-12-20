@@ -19,3 +19,16 @@ public class FirstRepeatedElement {
         for (int i = 0; i < size; i++) {
             array[i] = scanner.nextInt();
         }
+
+        // Find the first repeated element
+        int repeatedElement = findFirstRepeated(array);
+
+        // Display the result
+        if (repeatedElement != -1) {
+            System.out.println("First repeated element: " + repeatedElement);
+        } else {
+            System.out.println("No repeated elements found.");
+        }
+
+        scanner.close();
+    }
