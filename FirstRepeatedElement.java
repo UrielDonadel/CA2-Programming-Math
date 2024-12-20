@@ -12,3 +12,10 @@ public class FirstRepeatedElement {
         // Ask for the size of the array
         System.out.print("Enter the size of the array: ");
         int size = scanner.nextInt();
+
+        // Initialize the array
+        int[] array = new int[size];
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < size; i++) {
+            array[i] = scanner.nextInt();
+        }
