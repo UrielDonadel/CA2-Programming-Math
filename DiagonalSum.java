@@ -27,3 +27,11 @@ public class DiagonalSum {
             mainDiagonalSum += matrix[i][i];
             secondaryDiagonalSum += matrix[i][size - 1 - i];
         }
+
+        // Display the results
+        System.out.println("Sum of the main diagonal: " + mainDiagonalSum);
+        System.out.println("Sum of the secondary diagonal: " + secondaryDiagonalSum);
+
+        scanner.close();
+    }
+}
