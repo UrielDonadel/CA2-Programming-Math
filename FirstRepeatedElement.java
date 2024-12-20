@@ -8,3 +8,7 @@ public class FirstRepeatedElement {
     public static void main(String[] args) {
         // Create a Scanner to read input from the user
         Scanner scanner = new Scanner(System.in);
+
+        // Ask for the size of the array
+        System.out.print("Enter the size of the array: ");
+        int size = scanner.nextInt();
